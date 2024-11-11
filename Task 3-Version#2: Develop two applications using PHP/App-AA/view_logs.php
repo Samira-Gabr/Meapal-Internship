@@ -48,6 +48,18 @@ if ($response) {
         <div class="log-contents">
             <?php echo $logContents; ?>
         </div>
+        <br>
+        <a href="download_log.php" class="download-button">Download Log File</a>
+    <?php else: ?>
+        <p>Log file does not exist or could not be retrieved.</p>
+    <?php endif; ?>
+    <div class="links">
+        <a href="admin_dashboard.php">Back to Dashboard</a>
+    </div>
+</div>
+</body>
+</html>
+
     <?php else: ?>
         <p>Log file does not exist or could not be retrieved.</p>
     <?php endif; ?>
